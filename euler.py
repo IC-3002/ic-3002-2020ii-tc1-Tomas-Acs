@@ -1,8 +1,20 @@
+import math
+
+
+
 def e_cuadratica(n):
-    # Implemente esta función
-    return 0
+	suma = 1
+	for i in range(1, n+1):
+		suma = suma+(1/math.factorial(i))
+	return suma
+
 
 
 def e_lineal(n):
-    # Implemente esta función
-    return 0
+	factorial = 1
+	euler = 2
+	for x in range(2, n):
+		factorial *= x
+		euler += (1)/(factorial)
+	return euler
+
